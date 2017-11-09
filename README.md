@@ -9,5 +9,7 @@
 | Session Title  | Speaker | Slides | Demo Code | Videos |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Secure your environment by automation | [Jaap Brasser](https://github.com/jaapbrasser) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jaap%20Brasser/Secure%20your%20environment%20by%20automation/Secure%20your%20environment%20by%20automation.pdf) | [Demo Code](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jaap%20Brasser/Secure%20your%20environment%20by%20automation/Secure%20your%20environment%20by%20automation.zip) | |
+| Core Containers and Performance Graphics | [Luc Dekens](https://twitter.com/LucD22) | [Slides]() | | | |
+| DSC Resources for VMware vSphere | [Luc Dekens](https://twitter.com/LucD22) | [Slides]() | | | |
 | | | | | | |
 | | | | | | |
