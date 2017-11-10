@@ -14,7 +14,7 @@
 | Automated DC Deployment with DSC at BMW | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree)|  [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Raimund%20Andree/Automated%20DC%20Deployment%20with%20DSC%20at%20BMW/Automated%20DC%20Deployment%20with%20DSC%20at%20BMW.pptx) | | | |
 | Hybrid Lab Automation | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jan-Hendrik%20Peters/Hybrid%20Lab%20Automation/Hybrid%20Lab%20Automation.pptx) | [Demo Code](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jan-Hendrik%20Peters/Hybrid%20Lab%20Automation/Hybrid%20Lab%20Automation.zip) | |
 | Mastering a complex DSC lab infrastructure – The story of the BMW Group DC deployment | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Raimund%20Andree/Mastering%20a%20complex%20DSC%20lab%20infrastructure%20%E2%80%93%20The%20story%20of%20the%20BMW%20Group%20DC%20deployment/Mastering%20a%20complex%20DSC%20lab%20infrastructure%20%E2%80%93%20The%20story%20of%20the%20BMW%20Group%20DC%20deployment.pptx) | | |
-| | | | | |
+| Infrastructure as Code with Chef, Azure and VSTS | [Stuart Preston](https://github.com/stuartpreston) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Stuart%20Preston/Infrastructure%20as%20Code%20with%20Chef%2C%20Azure%20and%20VSTS/Infrastructure%20as%20Code%20with%20Chef%2C%20Azure%20and%20VSTS.pdf) | | |
 | | | | | |
 | | | | | |
 | | | | | |
