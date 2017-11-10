@@ -11,5 +11,12 @@
 | Secure your environment by automation | [Jaap Brasser](https://github.com/jaapbrasser) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jaap%20Brasser/Secure%20your%20environment%20by%20automation/Secure%20your%20environment%20by%20automation.pdf) | [Demo Code](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Jaap%20Brasser/Secure%20your%20environment%20by%20automation/Secure%20your%20environment%20by%20automation.zip) | |
 | Core Containers and Performance Graphics | [Luc Dekens](https://twitter.com/LucD22) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Luc%20Dekens/Core%20Containers%20and%20Performance%20Graphics/Core-Containers_Performance.pptx) | | | |
 | DSC Resources for VMware vSphere | [Luc Dekens](https://twitter.com/LucD22) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Luc%20Dekens/DSC%20Resources%20for%20VMware%20vSphere/vSphere%20DSC.pptx) | | | |
-| | | | | | |
-| | | | | | |
+| Automated DC Deployment with DSC at BMW | [Raimund Andree](https://github.com/raandree) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Raimund%20Andree/Automated%20DC%20Deployment%20with%20DSC%20at%20BMW/Automated%20DC%20Deployment%20with%20DSC%20at%20BMW.pptx) | | | |
+| Mastering a complex DSC lab infrastructure – The story of the BMW Group DC deployment | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree) | [Slides](https://github.com/PowerShellAsia/PSConfAsia2017/blob/master/Raimund%20Andree/Mastering%20a%20complex%20DSC%20lab%20infrastructure%20%E2%80%93%20The%20story%20of%20the%20BMW%20Group%20DC%20deployment/Mastering%20a%20complex%20DSC%20lab%20infrastructure%20%E2%80%93%20The%20story%20of%20the%20BMW%20Group%20DC%20deployment.pptx) | | |
+| Hybrid Lab Automation | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree) | [Slides]() | | |
+|  | [Jan-Hendrik Peters](https://github.com/nyanhp) & [Raimund Andree](https://github.com/raandree)| [Slides]() | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
