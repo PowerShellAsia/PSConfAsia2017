@@ -1,0 +1,190 @@
+﻿<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <I32 N="Depth">0</I32>
+      <S N="Name">pshirwin</S>
+      <S N="DistinguishedName">DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/</S>
+      <S N="PolicyDN">CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">1</I32>
+      <G N="GUID">31b2f340-016d-11d2-945f-00c04fb984f9</G>
+      <S N="DisplayName">Default Domain Policy</S>
+      <Obj N="GPOStatus" RefId="1">
+        <TN RefId="1">
+          <T>Microsoft.GroupPolicy.GpoStatus</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">1</I32>
+      <S N="Name">Domain Controllers</S>
+      <S N="DistinguishedName">OU=Domain Controllers,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Domain Controllers</S>
+      <S N="PolicyDN">CN={6AC1786C-016F-11D2-945F-00C04fB984F9},CN=Policies,CN=System,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">1</I32>
+      <G N="GUID">6ac1786c-016f-11d2-945f-00c04fb984f9</G>
+      <S N="DisplayName">Default Domain Controllers Policy</S>
+      <Obj N="GPOStatus" RefId="3">
+        <TNRef RefId="1" />
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">1</I32>
+      <S N="Name">Servers</S>
+      <S N="DistinguishedName">OU=Servers,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Servers</S>
+      <S N="PolicyDN">cn={21796EE1-1198-4B44-BFF6-74829178894D},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">1</I32>
+      <G N="GUID">21796ee1-1198-4b44-bff6-74829178894d</G>
+      <S N="DisplayName">WinRM Listeners</S>
+      <Obj N="GPOStatus" RefId="5">
+        <TNRef RefId="1" />
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">1</I32>
+      <S N="Name">Servers</S>
+      <S N="DistinguishedName">OU=Servers,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Servers</S>
+      <S N="PolicyDN">cn={53ED8D88-B3AA-4248-94E5-0AE6A18496A7},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">2</I32>
+      <G N="GUID">53ed8d88-b3aa-4248-94e5-0ae6a18496a7</G>
+      <S N="DisplayName">RemoteDesktop</S>
+      <Obj N="GPOStatus" RefId="7">
+        <TNRef RefId="1" />
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">1</I32>
+      <S N="Name">Servers</S>
+      <S N="DistinguishedName">OU=Servers,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Servers</S>
+      <S N="PolicyDN">cn={7CE708CD-0EC5-4054-BE77-67A611FD77B1},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">3</I32>
+      <G N="GUID">7ce708cd-0ec5-4054-be77-67a611fd77b1</G>
+      <S N="DisplayName">Firewall</S>
+      <Obj N="GPOStatus" RefId="9">
+        <TNRef RefId="1" />
+        <ToString>UserSettingsDisabled</ToString>
+        <I32>1</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">2</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">true</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">2</I32>
+      <S N="Name">Users</S>
+      <S N="DistinguishedName">OU=Users,OU=Resources,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Resources/Users</S>
+      <S N="PolicyDN">cn={CC2273BD-CC69-4BD3-9E85-E1D940D92D51},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">1</I32>
+      <G N="GUID">cc2273bd-cc69-4bd3-9e85-e1d940d92d51</G>
+      <S N="DisplayName">DriveMappings</S>
+      <Obj N="GPOStatus" RefId="11">
+        <TNRef RefId="1" />
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="12">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">2</I32>
+      <S N="Name">Users</S>
+      <S N="DistinguishedName">OU=Users,OU=Resources,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Resources/Users</S>
+      <S N="PolicyDN">cn={7BA079A7-A5D5-4A15-8DB1-8BADA1AEA36C},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">2</I32>
+      <G N="GUID">7ba079a7-a5d5-4a15-8db1-8bada1aea36c</G>
+      <S N="DisplayName">LocalAdministrators</S>
+      <Obj N="GPOStatus" RefId="13">
+        <TNRef RefId="1" />
+        <ToString>AllSettingsEnabled</ToString>
+        <I32>3</I32>
+      </Obj>
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <MS>
+      <I32 N="Depth">2</I32>
+      <S N="Name">Roles</S>
+      <S N="DistinguishedName">OU=Roles,OU=Resources,DC=pshirwin,DC=local</S>
+      <S N="canonicalName">pshirwin.local/Resources/Roles</S>
+      <S N="PolicyDN">cn={CC2273BD-CC69-4BD3-9E85-E1D940D92D51},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+      <I32 N="LinkOrderNr">1</I32>
+      <G N="GUID">cc2273bd-cc69-4bd3-9e85-e1d940d92d51</G>
+      <S N="DisplayName">DriveMappings</S>
+      <Ref N="GPOStatus" RefId="11" />
+      <Nil N="WMIFilter" />
+      <S N="Config">0</S>
+      <B N="LinkEnabled">true</B>
+      <B N="Enforced">false</B>
+      <B N="BlockInheritance">false</B>
+    </MS>
+  </Obj>
+</Objs>
