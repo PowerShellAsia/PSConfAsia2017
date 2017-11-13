@@ -40,7 +40,7 @@ $ADSnapshot.ReplicationMetaData = $(Get-ADReplicationPartnerMetadata -Target (Ge
 
 #region Export to XML
 $exportDate = Get-Date -Format ddMMyyyy
-$ADSnapshot | Export-Clixml .\export\dsa\ADReport-$($exportDate).xml -Encoding UTF8
+$ADSnapshot | Export-Clixml $PSScriptRoot\ADReport-$($exportDate).xml -Encoding UTF8
 #endregion
 
 #region AD Queries
@@ -58,7 +58,7 @@ $ADSnapshot.SiteLinks | Format-Table Name,Cost,ReplicationFrequencyInMinutes
 #region Compare Objects
 
 #Get previous ADReport
-$SavedADSnapshot = Import-Clixml .\export\dsa\ADReport-22032016.xml 
+$SavedADSnapshot = Import-Clixml $PSScriptRoot\ADReport-$($exportDate).xml
 
 #Compare Forest FSMO roles
 Compare-Object $SavedADSnapshot.ForestInformation $ADSnapshot.ForestInformation -Property SchemaMaster,DomainNamingMaster -IncludeEqual
