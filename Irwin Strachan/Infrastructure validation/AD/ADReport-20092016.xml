@@ -1,0 +1,2153 @@
+﻿<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Collections.Hashtable</T>
+      <T>System.Object</T>
+    </TN>
+    <DCT>
+      <En>
+        <S N="Key">ClaimTransformPolicies</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">ForestInformation</S>
+        <Obj N="Value" RefId="1">
+          <TN RefId="1">
+            <T>Microsoft.ActiveDirectory.Management.ADForest</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>pshirwin.local</ToString>
+          <Props>
+            <Obj N="ApplicationPartitions" RefId="2">
+              <TN RefId="2">
+                <T>Microsoft.ActiveDirectory.Management.ADPropertyValueCollection</T>
+                <T>System.Collections.CollectionBase</T>
+                <T>System.Object</T>
+              </TN>
+              <LST>
+                <S>DC=DomainDnsZones,DC=pshirwin,DC=local</S>
+                <S>DC=ForestDnsZones,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <Obj N="CrossForestReferences" RefId="3">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <S N="DomainNamingMaster">DC-DSC-01.pshirwin.local</S>
+            <Obj N="Domains" RefId="4">
+              <TNRef RefId="2" />
+              <LST>
+                <S>pshirwin.local</S>
+              </LST>
+            </Obj>
+            <Obj N="ForestMode" RefId="5">
+              <TN RefId="3">
+                <T>Microsoft.ActiveDirectory.Management.ADForestMode</T>
+                <T>System.Enum</T>
+                <T>System.ValueType</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>Windows2012R2Forest</ToString>
+              <I32>6</I32>
+            </Obj>
+            <Obj N="GlobalCatalogs" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>DC-DSC-01.pshirwin.local</S>
+              </LST>
+            </Obj>
+            <S N="Name">pshirwin.local</S>
+            <S N="PartitionsContainer">CN=Partitions,CN=Configuration,DC=pshirwin,DC=local</S>
+            <S N="RootDomain">pshirwin.local</S>
+            <S N="SchemaMaster">DC-DSC-01.pshirwin.local</S>
+            <Obj N="Sites" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Default-First-Site-Name</S>
+                <S>Branch01</S>
+              </LST>
+            </Obj>
+            <Obj N="SPNSuffixes" RefId="8">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <Obj N="UPNSuffixes" RefId="9">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">DomainTrusts</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">AuthenticationPolicySilos</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">OrganizationalUnits</S>
+        <Obj N="Value" RefId="10">
+          <TN RefId="4">
+            <T>System.Object[]</T>
+            <T>System.Array</T>
+            <T>System.Object</T>
+          </TN>
+          <LST>
+            <Obj RefId="11">
+              <TN RefId="5">
+                <T>Microsoft.ActiveDirectory.Management.ADOrganizationalUnit</T>
+                <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+                <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+                <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>OU=Domain Controllers,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Domain Controllers,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="12">
+                  <TNRef RefId="2" />
+                  <LST>
+                    <S>CN={6AC1786C-016F-11D2-945F-00C04fB984F9},CN=Policies,CN=System,DC=pshirwin,DC=local</S>
+                  </LST>
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Domain Controllers</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">f76af086-5732-43af-856d-9856fbdcb64a</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="13">
+              <TNRef RefId="5" />
+              <ToString>OU=Servers,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Servers,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="14">
+                  <TNRef RefId="2" />
+                  <LST>
+                    <S>cn={7CE708CD-0EC5-4054-BE77-67A611FD77B1},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                    <S>cn={53ED8D88-B3AA-4248-94E5-0AE6A18496A7},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                    <S>cn={21796EE1-1198-4B44-BFF6-74829178894D},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                  </LST>
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Servers</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">bef7bca9-d0c6-4846-981e-d5d5ccc570b5</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="15">
+              <TNRef RefId="5" />
+              <ToString>OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="16">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Resources</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">d575130d-6cb5-48b4-9a9c-1e44aa0da012</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="17">
+              <TNRef RefId="5" />
+              <ToString>OU=Users,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Users,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="18">
+                  <TNRef RefId="2" />
+                  <LST>
+                    <S>cn={7BA079A7-A5D5-4A15-8DB1-8BADA1AEA36C},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                    <S>cn={CC2273BD-CC69-4BD3-9E85-E1D940D92D51},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                  </LST>
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Users</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">bf009076-9891-4bce-a92f-d25c8867a8e6</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="19">
+              <TNRef RefId="5" />
+              <ToString>OU=Groups,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Groups,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="20">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Groups</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">b1fbbbe2-f58b-4319-b554-e31e97c71084</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="21">
+              <TNRef RefId="5" />
+              <ToString>OU=RBAC,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=RBAC,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="22">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">RBAC</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">cf002f75-16ec-4734-9f8f-5f2a4e33cef1</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="23">
+              <TNRef RefId="5" />
+              <ToString>OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="24">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">IPI</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">b792fc22-3953-48c0-aa0c-404d0c2273ef</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="25">
+              <TNRef RefId="5" />
+              <ToString>OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="26">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Gebruikers</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">8b164a6d-b5b1-45d6-a019-92fbcf6f6f6d</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="27">
+              <TNRef RefId="5" />
+              <ToString>OU=Propertize,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Propertize,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="28">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Propertize</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">939d4d5c-e85a-426c-bfa4-d17b3a46f0e1</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="29">
+              <TNRef RefId="5" />
+              <ToString>OU=Delegation,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Delegation,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="30">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Delegation</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">43efb5b1-7153-439d-9368-c4f7a73bc660</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="31">
+              <TNRef RefId="5" />
+              <ToString>OU=Maarssen,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Maarssen,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="32">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Maarssen</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">ad8bce7d-79d2-4a36-8f25-05a62228ed19</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="33">
+              <TNRef RefId="5" />
+              <ToString>OU=Pantar,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Pantar,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="34">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Pantar</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">6e5c338e-5ab9-420b-aada-91fd21bf98f2</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="35">
+              <TNRef RefId="5" />
+              <ToString>OU=Roles,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Roles,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="36">
+                  <TNRef RefId="2" />
+                  <LST>
+                    <S>cn={CC2273BD-CC69-4BD3-9E85-E1D940D92D51},cn=policies,cn=system,DC=pshirwin,DC=local</S>
+                  </LST>
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Roles</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">e42f72fd-3864-47c7-b591-6726cc3f383e</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="37">
+              <TNRef RefId="5" />
+              <ToString>OU=DAT,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=DAT,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="38">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">DAT</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">3570780a-2f18-422f-a4af-3029b9c63c27</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="39">
+              <TNRef RefId="5" />
+              <ToString>OU=Extern,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Extern,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="40">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Extern</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">f76d483b-eb2c-4533-a96d-ce9e44212678</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="41">
+              <TNRef RefId="5" />
+              <ToString>OU=Disabled,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Disabled,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="42">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Disabled</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">2bfe3051-e422-46be-9250-33b0e99b12e1</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="43">
+              <TNRef RefId="5" />
+              <ToString>OU=Temp,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=Temp,OU=IPI,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="44">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">Temp</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">5bbba95d-2b29-4ce5-b939-873e67ac3e67</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="45">
+              <TNRef RefId="5" />
+              <ToString>OU=DistributionList,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=DistributionList,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="46">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">DistributionList</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">bb6d732c-242c-4d97-9aef-c9484115ab4c</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+            <Obj RefId="47">
+              <TNRef RefId="5" />
+              <ToString>OU=PrintQueues,OU=Resources,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="City" />
+                <Nil N="Country" />
+                <S N="DistinguishedName">OU=PrintQueues,OU=Resources,DC=pshirwin,DC=local</S>
+                <Obj N="LinkedGroupPolicyObjects" RefId="48">
+                  <TNRef RefId="2" />
+                  <LST />
+                </Obj>
+                <Nil N="ManagedBy" />
+                <S N="Name">PrintQueues</S>
+                <S N="ObjectClass">organizationalUnit</S>
+                <G N="ObjectGUID">882e4a6e-45d8-4675-af1f-eb1df2f48854</G>
+                <Nil N="PostalCode" />
+                <Nil N="State" />
+                <Nil N="StreetAddress" />
+              </Props>
+            </Obj>
+          </LST>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">ReplicationMetaData</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">AuthenticationPolicies</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">DomainInformation</S>
+        <Obj N="Value" RefId="49">
+          <TN RefId="6">
+            <T>Microsoft.ActiveDirectory.Management.ADDomain</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPartition</T>
+            <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>DC=pshirwin,DC=local</ToString>
+          <Props>
+            <Obj N="AllowedDNSSuffixes" RefId="50">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <Obj N="ChildDomains" RefId="51">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <S N="ComputersContainer">CN=Computers,DC=pshirwin,DC=local</S>
+            <S N="DeletedObjectsContainer">CN=Deleted Objects,DC=pshirwin,DC=local</S>
+            <S N="DistinguishedName">DC=pshirwin,DC=local</S>
+            <S N="DNSRoot">pshirwin.local</S>
+            <S N="DomainControllersContainer">OU=Domain Controllers,DC=pshirwin,DC=local</S>
+            <Obj N="DomainMode" RefId="52">
+              <TN RefId="7">
+                <T>Microsoft.ActiveDirectory.Management.ADDomainMode</T>
+                <T>System.Enum</T>
+                <T>System.ValueType</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>Windows2012R2Domain</ToString>
+              <I32>6</I32>
+            </Obj>
+            <Obj N="DomainSID" RefId="53">
+              <TN RefId="8">
+                <T>System.Security.Principal.SecurityIdentifier</T>
+                <T>System.Security.Principal.IdentityReference</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>S-1-5-21-2648780957-277300436-725747423</ToString>
+              <Props>
+                <I32 N="BinaryLength">24</I32>
+                <S N="AccountDomainSid">S-1-5-21-2648780957-277300436-725747423</S>
+                <S N="Value">S-1-5-21-2648780957-277300436-725747423</S>
+              </Props>
+            </Obj>
+            <S N="ForeignSecurityPrincipalsContainer">CN=ForeignSecurityPrincipals,DC=pshirwin,DC=local</S>
+            <S N="Forest">pshirwin.local</S>
+            <S N="InfrastructureMaster">DC-DSC-01.pshirwin.local</S>
+            <Nil N="LastLogonReplicationInterval" />
+            <Obj N="LinkedGroupPolicyObjects" RefId="54">
+              <TNRef RefId="2" />
+              <LST>
+                <S>CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <S N="LostAndFoundContainer">CN=LostAndFound,DC=pshirwin,DC=local</S>
+            <Nil N="ManagedBy" />
+            <S N="Name">pshirwin</S>
+            <S N="NetBIOSName">PSHIRWIN</S>
+            <S N="ObjectClass">domainDNS</S>
+            <G N="ObjectGUID">b413ac14-2df3-4792-8838-bab038fe19f5</G>
+            <Nil N="ParentDomain" />
+            <S N="PDCEmulator">DC-DSC-01.pshirwin.local</S>
+            <S N="QuotasContainer">CN=NTDS Quotas,DC=pshirwin,DC=local</S>
+            <Obj N="ReadOnlyReplicaDirectoryServers" RefId="55">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <Obj N="ReplicaDirectoryServers" RefId="56">
+              <TNRef RefId="2" />
+              <LST>
+                <S>DC-DSC-01.pshirwin.local</S>
+              </LST>
+            </Obj>
+            <S N="RIDMaster">DC-DSC-01.pshirwin.local</S>
+            <Obj N="SubordinateReferences" RefId="57">
+              <TNRef RefId="2" />
+              <LST>
+                <S>DC=ForestDnsZones,DC=pshirwin,DC=local</S>
+                <S>DC=DomainDnsZones,DC=pshirwin,DC=local</S>
+                <S>CN=Configuration,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <S N="SystemsContainer">CN=System,DC=pshirwin,DC=local</S>
+            <S N="UsersContainer">CN=Users,DC=pshirwin,DC=local</S>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">Sites</S>
+        <Obj N="Value" RefId="58">
+          <TNRef RefId="4" />
+          <LST>
+            <Obj RefId="59">
+              <TN RefId="9">
+                <T>Microsoft.ActiveDirectory.Management.ADReplicationSite</T>
+                <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+                <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+                <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="Description" />
+                <S N="DistinguishedName">CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S N="InterSiteTopologyGenerator">CN=NTDS Settings,CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+                <Nil N="ManagedBy" />
+                <S N="Name">Default-First-Site-Name</S>
+                <S N="ObjectClass">site</S>
+                <G N="ObjectGUID">eebf4622-798d-4dc5-974b-0259628688ae</G>
+                <Obj N="ReplicationSchedule" RefId="60">
+                  <TN RefId="10">
+                    <T>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</T>
+                    <T>System.Object</T>
+                  </TN>
+                  <ToString>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule</ToString>
+                  <Props>
+                    <Obj N="RawSchedule" RefId="61">
+                      <TN RefId="11">
+                        <T>System.Boolean[,,]</T>
+                        <T>System.Array</T>
+                        <T>System.Object</T>
+                      </TN>
+                      <LST>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>true</B>
+                        <B>false</B>
+                        <B>false</B>
+                        <B>false</B>
+                      </LST>
+                    </Obj>
+                  </Props>
+                </Obj>
+                <Nil N="UniversalGroupCachingRefreshSite" />
+              </Props>
+            </Obj>
+            <Obj RefId="62">
+              <TNRef RefId="9" />
+              <ToString>CN=Branch01,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <Nil N="Description" />
+                <S N="DistinguishedName">CN=Branch01,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+                <Nil N="InterSiteTopologyGenerator" />
+                <Nil N="ManagedBy" />
+                <S N="Name">Branch01</S>
+                <S N="ObjectClass">site</S>
+                <G N="ObjectGUID">d2df5ec7-5b1e-4633-9c4e-6fb862fd4249</G>
+                <Nil N="ReplicationSchedule" />
+                <Nil N="UniversalGroupCachingRefreshSite" />
+              </Props>
+            </Obj>
+          </LST>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">CentralAccessPolicies</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">CentralAccessRules</S>
+        <Nil N="Value" />
+      </En>
+      <En>
+        <S N="Key">SiteLinks</S>
+        <Obj N="Value" RefId="63">
+          <TN RefId="12">
+            <T>Microsoft.ActiveDirectory.Management.ADReplicationSiteLink</T>
+            <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>CN=DEFAULTIPSITELINK,CN=IP,CN=Inter-Site Transports,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</ToString>
+          <Props>
+            <I32 N="Cost">100</I32>
+            <S N="DistinguishedName">CN=DEFAULTIPSITELINK,CN=IP,CN=Inter-Site Transports,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <S N="Name">DEFAULTIPSITELINK</S>
+            <S N="ObjectClass">siteLink</S>
+            <G N="ObjectGUID">86fb130d-cb62-445d-923c-8e3f686a721a</G>
+            <I32 N="ReplicationFrequencyInMinutes">180</I32>
+            <Obj N="SitesIncluded" RefId="64">
+              <TNRef RefId="2" />
+              <LST>
+                <S>CN=Branch01,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">Subnets</S>
+        <Obj N="Value" RefId="65">
+          <TN RefId="13">
+            <T>Microsoft.ActiveDirectory.Management.ADReplicationSubnet</T>
+            <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>CN=192.168.0.0/24,CN=Subnets,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</ToString>
+          <Props>
+            <S N="DistinguishedName">CN=192.168.0.0/24,CN=Subnets,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <Nil N="Location" />
+            <S N="Name">192.168.0.0/24</S>
+            <S N="ObjectClass">subnet</S>
+            <G N="ObjectGUID">d9f05f70-40b5-4577-ac61-e37d9f1ab3ec</G>
+            <S N="Site">CN=Branch01,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">OptionalFeatures</S>
+        <Obj N="Value" RefId="66">
+          <TN RefId="14">
+            <T>Microsoft.ActiveDirectory.Management.ADOptionalFeature</T>
+            <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>CN=Recycle Bin Feature,CN=Optional Features,CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=pshirwin,DC=local</ToString>
+          <Props>
+            <S N="DistinguishedName">CN=Recycle Bin Feature,CN=Optional Features,CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=pshirwin,DC=local</S>
+            <Obj N="EnabledScopes" RefId="67">
+              <TNRef RefId="2" />
+              <LST>
+                <S>CN=Partitions,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=NTDS Settings,CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <G N="FeatureGUID">766ddcd8-acd0-445e-f3b9-a7f9b6744f2a</G>
+            <Obj N="FeatureScope" RefId="68">
+              <TN RefId="15">
+                <T>Microsoft.ActiveDirectory.Management.ADOptionalFeatureScope[]</T>
+                <T>System.Array</T>
+                <T>System.Object</T>
+              </TN>
+              <LST>
+                <Obj RefId="69">
+                  <TN RefId="16">
+                    <T>Microsoft.ActiveDirectory.Management.ADOptionalFeatureScope</T>
+                    <T>System.Enum</T>
+                    <T>System.ValueType</T>
+                    <T>System.Object</T>
+                  </TN>
+                  <ToString>ForestOrConfigurationSet</ToString>
+                  <I32>1</I32>
+                </Obj>
+              </LST>
+            </Obj>
+            <B N="IsDisableable">false</B>
+            <S N="Name">Recycle Bin Feature</S>
+            <S N="ObjectClass">msDS-OptionalFeature</S>
+            <G N="ObjectGUID">0f48c08c-92ab-4d58-b908-ad6ef20efcc6</G>
+            <Obj N="RequiredForestMode" RefId="70">
+              <TNRef RefId="3" />
+              <ToString>Windows2008R2Forest</ToString>
+              <I32>4</I32>
+            </Obj>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">DomainControllers</S>
+        <Obj N="Value" RefId="71">
+          <TN RefId="17">
+            <T>Microsoft.ActiveDirectory.Management.ADDomainController</T>
+            <T>Microsoft.ActiveDirectory.Management.ADDirectoryServer</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>DC-DSC-01</ToString>
+          <Props>
+            <S N="ComputerObjectDN">CN=DC-DSC-01,OU=Domain Controllers,DC=pshirwin,DC=local</S>
+            <S N="DefaultPartition">DC=pshirwin,DC=local</S>
+            <S N="Domain">pshirwin.local</S>
+            <B N="Enabled">true</B>
+            <S N="Forest">pshirwin.local</S>
+            <S N="HostName">DC-DSC-01.pshirwin.local</S>
+            <G N="InvocationId">56e07b4d-cef3-4468-92e7-4bf68155aed4</G>
+            <S N="IPv4Address">10.15.75.250</S>
+            <Nil N="IPv6Address" />
+            <B N="IsGlobalCatalog">true</B>
+            <B N="IsReadOnly">false</B>
+            <I32 N="LdapPort">389</I32>
+            <S N="Name">DC-DSC-01</S>
+            <S N="NTDSSettingsObjectDN">CN=NTDS Settings,CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <S N="OperatingSystem">Windows Server 2012 R2 Standard</S>
+            <Nil N="OperatingSystemHotfix" />
+            <Nil N="OperatingSystemServicePack" />
+            <S N="OperatingSystemVersion">6.3 (9600)</S>
+            <Obj N="OperationMasterRoles" RefId="72">
+              <TNRef RefId="2" />
+              <LST>
+                <Obj RefId="73">
+                  <TN RefId="18">
+                    <T>schemas.microsoft.com._2008._1.ActiveDirectory.CustomActions.ActiveDirectoryOperationMasterRole</T>
+                    <T>System.Enum</T>
+                    <T>System.ValueType</T>
+                    <T>System.Object</T>
+                  </TN>
+                  <ToString>SchemaMaster</ToString>
+                  <I32>3</I32>
+                </Obj>
+                <Obj RefId="74">
+                  <TNRef RefId="18" />
+                  <ToString>DomainNamingMaster</ToString>
+                  <I32>4</I32>
+                </Obj>
+                <Obj RefId="75">
+                  <TNRef RefId="18" />
+                  <ToString>PDCEmulator</ToString>
+                  <I32>0</I32>
+                </Obj>
+                <Obj RefId="76">
+                  <TNRef RefId="18" />
+                  <ToString>RIDMaster</ToString>
+                  <I32>1</I32>
+                </Obj>
+                <Obj RefId="77">
+                  <TNRef RefId="18" />
+                  <ToString>InfrastructureMaster</ToString>
+                  <I32>2</I32>
+                </Obj>
+              </LST>
+            </Obj>
+            <Obj N="Partitions" RefId="78">
+              <TNRef RefId="2" />
+              <LST>
+                <S>DC=ForestDnsZones,DC=pshirwin,DC=local</S>
+                <S>DC=DomainDnsZones,DC=pshirwin,DC=local</S>
+                <S>CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <S N="ServerObjectDN">CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <G N="ServerObjectGuid">26b15a20-bc3d-4977-8afa-6e546f5d69dc</G>
+            <S N="Site">Default-First-Site-Name</S>
+            <I32 N="SslPort">636</I32>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">ClaimTypes</S>
+        <Obj N="Value" RefId="79">
+          <TN RefId="19">
+            <T>Microsoft.ActiveDirectory.Management.ADClaimType</T>
+            <T>Microsoft.ActiveDirectory.Management.ADClaimTypeBase</T>
+            <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>CN=ad://ext/AuthenticationSilo,CN=Claim Types,CN=Claims Configuration,CN=Services,CN=Configuration,DC=pshirwin,DC=local</ToString>
+          <Props>
+            <Obj N="AppliesToClasses" RefId="80">
+              <TNRef RefId="2" />
+              <LST>
+                <S>CN=ms-DS-Group-Managed-Service-Account,CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=User,CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=ms-DS-Managed-Service-Account,CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=Computer,CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <S N="ClaimSourceType">Constructed</S>
+            <Obj N="CompatibleResourceTypes" RefId="81">
+              <TNRef RefId="2" />
+              <LST>
+                <Obj RefId="82">
+                  <TN RefId="20">
+                    <T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T>
+                    <T>System.Object</T>
+                  </TN>
+                  <LST>
+                    <S>MS-DS-MultivaluedText</S>
+                    <S>MS-DS-Text</S>
+                  </LST>
+                </Obj>
+              </LST>
+            </Obj>
+            <S N="DisplayName">AuthenticationSilo</S>
+            <S N="DistinguishedName">CN=ad://ext/AuthenticationSilo,CN=Claim Types,CN=Claims Configuration,CN=Services,CN=Configuration,DC=pshirwin,DC=local</S>
+            <B N="Enabled">true</B>
+            <S N="ID">ad://ext/AuthenticationSilo</S>
+            <B N="IsSingleValued">true</B>
+            <S N="Name">ad://ext/AuthenticationSilo</S>
+            <S N="ObjectClass">msDS-ClaimType</S>
+            <G N="ObjectGUID">f0f6de23-5e5a-4350-971a-955d7ef96f99</G>
+            <B N="RestrictValues">false</B>
+            <Nil N="SourceAttribute" />
+            <Nil N="SourceOID" />
+            <Obj N="SuggestedValues" RefId="83">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+            <Obj N="ValueType" RefId="84">
+              <TN RefId="21">
+                <T>Microsoft.ActiveDirectory.Management.ADClaimValueType</T>
+                <T>System.Enum</T>
+                <T>System.ValueType</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>String</ToString>
+              <I64>3</I64>
+            </Obj>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">RootDSE</S>
+        <Obj N="Value" RefId="85">
+          <TN RefId="22">
+            <T>Microsoft.ActiveDirectory.Management.ADRootDSE</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>Microsoft.ActiveDirectory.Management.ADRootDSE</ToString>
+          <Props>
+            <S N="configurationNamingContext">CN=Configuration,DC=pshirwin,DC=local</S>
+            <DT N="currentTime">2016-09-20T16:23:50+02:00</DT>
+            <S N="defaultNamingContext">DC=pshirwin,DC=local</S>
+            <S N="dnsHostName">DC-DSC-01.pshirwin.local</S>
+            <Obj N="domainControllerFunctionality" RefId="86">
+              <TN RefId="23">
+                <T>Microsoft.ActiveDirectory.Management.ADDomainControllerMode</T>
+                <T>System.Enum</T>
+                <T>System.ValueType</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>Windows2012R2</ToString>
+              <I32>6</I32>
+            </Obj>
+            <Obj N="domainFunctionality" RefId="87">
+              <TNRef RefId="7" />
+              <ToString>Windows2012R2Domain</ToString>
+              <I32>6</I32>
+            </Obj>
+            <S N="dsServiceName">CN=NTDS Settings,CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <Obj N="forestFunctionality" RefId="88">
+              <TNRef RefId="3" />
+              <ToString>Windows2012R2Forest</ToString>
+              <I32>6</I32>
+            </Obj>
+            <I64 N="highestCommittedUSN">215552</I64>
+            <Obj N="isGlobalCatalogReady" RefId="89">
+              <TNRef RefId="2" />
+              <LST>
+                <S>TRUE</S>
+              </LST>
+            </Obj>
+            <Obj N="isSynchronized" RefId="90">
+              <TNRef RefId="2" />
+              <LST>
+                <S>TRUE</S>
+              </LST>
+            </Obj>
+            <S N="ldapServiceName">pshirwin.local:dc-dsc-01$@PSHIRWIN.LOCAL</S>
+            <Obj N="namingContexts" RefId="91">
+              <TN RefId="24">
+                <T>System.String[]</T>
+                <T>System.Array</T>
+                <T>System.Object</T>
+              </TN>
+              <LST>
+                <S>DC=pshirwin,DC=local</S>
+                <S>CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+                <S>DC=DomainDnsZones,DC=pshirwin,DC=local</S>
+                <S>DC=ForestDnsZones,DC=pshirwin,DC=local</S>
+              </LST>
+            </Obj>
+            <S N="rootDomainNamingContext">DC=pshirwin,DC=local</S>
+            <S N="schemaNamingContext">CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+            <S N="serverName">CN=DC-DSC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=pshirwin,DC=local</S>
+            <S N="subschemaSubentry">CN=Aggregate,CN=Schema,CN=Configuration,DC=pshirwin,DC=local</S>
+            <Obj N="supportedCapabilities" RefId="92">
+              <TN RefId="25">
+                <T>Microsoft.ActiveDirectory.Management.ADObjectIdentifier[]</T>
+                <T>System.Array</T>
+                <T>System.Object</T>
+              </TN>
+              <LST>
+                <Obj RefId="93">
+                  <TN RefId="26">
+                    <T>Microsoft.ActiveDirectory.Management.ADObjectIdentifier</T>
+                    <T>System.Object</T>
+                  </TN>
+                  <ToString>1.2.840.113556.1.4.800 (LDAP_CAP_ACTIVE_DIRECTORY_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.800</S>
+                    <S N="DisplayName">LDAP_CAP_ACTIVE_DIRECTORY_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="94">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1670 (LDAP_CAP_ACTIVE_DIRECTORY_V51_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1670</S>
+                    <S N="DisplayName">LDAP_CAP_ACTIVE_DIRECTORY_V51_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="95">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1791 (LDAP_CAP_ACTIVE_DIRECTORY_LDAP_INTEG_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1791</S>
+                    <S N="DisplayName">LDAP_CAP_ACTIVE_DIRECTORY_LDAP_INTEG_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="96">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1935 (LDAP_CAP_ACTIVE_DIRECTORY_V61_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1935</S>
+                    <S N="DisplayName">LDAP_CAP_ACTIVE_DIRECTORY_V61_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="97">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2080</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2080</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="98">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2237</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2237</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+              </LST>
+            </Obj>
+            <Obj N="supportedControl" RefId="99">
+              <TNRef RefId="25" />
+              <LST>
+                <Obj RefId="100">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.319 (LDAP_PAGED_RESULT_OID_STRING)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.319</S>
+                    <S N="DisplayName">LDAP_PAGED_RESULT_OID_STRING</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="101">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.801 (LDAP_SERVER_SD_FLAGS_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.801</S>
+                    <S N="DisplayName">LDAP_SERVER_SD_FLAGS_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="102">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.473 (LDAP_SERVER_SORT_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.473</S>
+                    <S N="DisplayName">LDAP_SERVER_SORT_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="103">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.528 (LDAP_SERVER_NOTIFICATION_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.528</S>
+                    <S N="DisplayName">LDAP_SERVER_NOTIFICATION_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="104">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.417 (LDAP_SERVER_SHOW_DELETED_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.417</S>
+                    <S N="DisplayName">LDAP_SERVER_SHOW_DELETED_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="105">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.619 (LDAP_SERVER_LAZY_COMMIT_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.619</S>
+                    <S N="DisplayName">LDAP_SERVER_LAZY_COMMIT_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="106">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.841 (LDAP_SERVER_DIRSYNC_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.841</S>
+                    <S N="DisplayName">LDAP_SERVER_DIRSYNC_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="107">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.529 (LDAP_SERVER_EXTENDED_DN_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.529</S>
+                    <S N="DisplayName">LDAP_SERVER_EXTENDED_DN_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="108">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.805 (LDAP_SERVER_TREE_DELETE_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.805</S>
+                    <S N="DisplayName">LDAP_SERVER_TREE_DELETE_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="109">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.521 (LDAP_SERVER_CROSSDOM_MOVE_TARGET_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.521</S>
+                    <S N="DisplayName">LDAP_SERVER_CROSSDOM_MOVE_TARGET_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="110">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.970 (LDAP_SERVER_GET_STATS_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.970</S>
+                    <S N="DisplayName">LDAP_SERVER_GET_STATS_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="111">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1338 (LDAP_SERVER_VERIFY_NAME_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1338</S>
+                    <S N="DisplayName">LDAP_SERVER_VERIFY_NAME_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="112">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.474 (LDAP_SERVER_RESP_SORT_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.474</S>
+                    <S N="DisplayName">LDAP_SERVER_RESP_SORT_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="113">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1339 (LDAP_SERVER_DOMAIN_SCOPE_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1339</S>
+                    <S N="DisplayName">LDAP_SERVER_DOMAIN_SCOPE_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="114">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1340 (LDAP_SERVER_SEARCH_OPTIONS_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1340</S>
+                    <S N="DisplayName">LDAP_SERVER_SEARCH_OPTIONS_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="115">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1413 (LDAP_SERVER_PERMISSIVE_MODIFY_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1413</S>
+                    <S N="DisplayName">LDAP_SERVER_PERMISSIVE_MODIFY_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="116">
+                  <TNRef RefId="26" />
+                  <ToString>2.16.840.1.113730.3.4.9 (LDAP_CONTROL_VLVREQUEST)</ToString>
+                  <Props>
+                    <S N="Value">2.16.840.1.113730.3.4.9</S>
+                    <S N="DisplayName">LDAP_CONTROL_VLVREQUEST</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="117">
+                  <TNRef RefId="26" />
+                  <ToString>2.16.840.1.113730.3.4.10 (LDAP_CONTROL_VLVRESPONSE)</ToString>
+                  <Props>
+                    <S N="Value">2.16.840.1.113730.3.4.10</S>
+                    <S N="DisplayName">LDAP_CONTROL_VLVRESPONSE</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="118">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1504 (LDAP_SERVER_ASQ_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1504</S>
+                    <S N="DisplayName">LDAP_SERVER_ASQ_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="119">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1852 (LDAP_SERVER_QUOTA_CONTROL_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1852</S>
+                    <S N="DisplayName">LDAP_SERVER_QUOTA_CONTROL_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="120">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.802 (LDAP_SERVER_RANGE_OPTION_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.802</S>
+                    <S N="DisplayName">LDAP_SERVER_RANGE_OPTION_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="121">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1907 (LDAP_SERVER_SHUTDOWN_NOTIFY_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1907</S>
+                    <S N="DisplayName">LDAP_SERVER_SHUTDOWN_NOTIFY_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="122">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1948 (LDAP_SERVER_RANGE_RETRIEVAL_NOERR_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1948</S>
+                    <S N="DisplayName">LDAP_SERVER_RANGE_RETRIEVAL_NOERR_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="123">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1974 (LDAP_SERVER_FORCE_UPDATE_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1974</S>
+                    <S N="DisplayName">LDAP_SERVER_FORCE_UPDATE_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="124">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.1341 (LDAP_SERVER_RODC_DCPROMO_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.1341</S>
+                    <S N="DisplayName">LDAP_SERVER_RODC_DCPROMO_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="125">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2026 (LDAP_SERVER_DN_INPUT_OID)</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2026</S>
+                    <S N="DisplayName">LDAP_SERVER_DN_INPUT_OID</S>
+                  </Props>
+                </Obj>
+                <Obj RefId="126">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2064</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2064</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="127">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2065</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2065</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="128">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2066</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2066</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="129">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2090</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2090</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="130">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2205</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2205</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="131">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2204</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2204</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="132">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2206</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2206</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="133">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2211</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2211</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="134">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2239</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2239</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="135">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2255</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2255</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+                <Obj RefId="136">
+                  <TNRef RefId="26" />
+                  <ToString>1.2.840.113556.1.4.2256</ToString>
+                  <Props>
+                    <S N="Value">1.2.840.113556.1.4.2256</S>
+                    <Nil N="DisplayName" />
+                  </Props>
+                </Obj>
+              </LST>
+            </Obj>
+            <Obj N="supportedLDAPPolicies" RefId="137">
+              <TNRef RefId="24" />
+              <LST>
+                <S>MaxPoolThreads</S>
+                <S>MaxPercentDirSyncRequests</S>
+                <S>MaxDatagramRecv</S>
+                <S>MaxReceiveBuffer</S>
+                <S>InitRecvTimeout</S>
+                <S>MaxConnections</S>
+                <S>MaxConnIdleTime</S>
+                <S>MaxPageSize</S>
+                <S>MaxBatchReturnMessages</S>
+                <S>MaxQueryDuration</S>
+                <S>MaxTempTableSize</S>
+                <S>MaxResultSetSize</S>
+                <S>MinResultSets</S>
+                <S>MaxResultSetsPerConn</S>
+                <S>MaxNotificationPerConn</S>
+                <S>MaxValRange</S>
+                <S>MaxValRangeTransitive</S>
+                <S>ThreadMemoryLimit</S>
+                <S>SystemMemoryLimitPercent</S>
+              </LST>
+            </Obj>
+            <Obj N="supportedLDAPVersion" RefId="138">
+              <TN RefId="27">
+                <T>System.Int32[]</T>
+                <T>System.Array</T>
+                <T>System.Object</T>
+              </TN>
+              <LST>
+                <I32>3</I32>
+                <I32>2</I32>
+              </LST>
+            </Obj>
+            <Obj N="supportedSASLMechanisms" RefId="139">
+              <TNRef RefId="24" />
+              <LST>
+                <S>GSSAPI</S>
+                <S>GSS-SPNEGO</S>
+                <S>EXTERNAL</S>
+                <S>DIGEST-MD5</S>
+              </LST>
+            </Obj>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">DefaultPassWordPoLicy</S>
+        <Obj N="Value" RefId="140">
+          <TN RefId="28">
+            <T>Microsoft.ActiveDirectory.Management.ADDefaultDomainPasswordPolicy</T>
+            <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+            <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+            <T>System.Object</T>
+          </TN>
+          <ToString>DC=pshirwin,DC=local</ToString>
+          <Props>
+            <B N="ComplexityEnabled">true</B>
+            <S N="DistinguishedName">DC=pshirwin,DC=local</S>
+            <TS N="LockoutDuration">PT30M</TS>
+            <TS N="LockoutObservationWindow">PT30M</TS>
+            <I32 N="LockoutThreshold">0</I32>
+            <TS N="MaxPasswordAge">P42D</TS>
+            <TS N="MinPasswordAge">P1D</TS>
+            <I32 N="MinPasswordLength">7</I32>
+            <Obj N="objectClass" RefId="141">
+              <TNRef RefId="2" />
+              <LST>
+                <S>domainDNS</S>
+              </LST>
+            </Obj>
+            <G N="objectGuid">b413ac14-2df3-4792-8838-bab038fe19f5</G>
+            <I32 N="PasswordHistoryCount">24</I32>
+            <B N="ReversibleEncryptionEnabled">false</B>
+          </Props>
+        </Obj>
+      </En>
+      <En>
+        <S N="Key">DomainAdministrators</S>
+        <Obj N="Value" RefId="142">
+          <TNRef RefId="4" />
+          <LST>
+            <Obj RefId="143">
+              <TN RefId="29">
+                <T>Microsoft.ActiveDirectory.Management.ADPrincipal</T>
+                <T>Microsoft.ActiveDirectory.Management.ADObject</T>
+                <T>Microsoft.ActiveDirectory.Management.ADEntity</T>
+                <T>Microsoft.ActiveDirectory.Management.ADPropertyCollection</T>
+                <T>System.Object</T>
+              </TN>
+              <ToString>CN=Administrator,CN=Users,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <S N="distinguishedName">CN=Administrator,CN=Users,DC=pshirwin,DC=local</S>
+                <S N="name">Administrator</S>
+                <S N="objectClass">user</S>
+                <G N="objectGUID">7b2a26db-d972-4a83-9d3f-80df3ce8d680</G>
+                <S N="SamAccountName">Administrator</S>
+                <Obj N="SID" RefId="144">
+                  <TNRef RefId="8" />
+                  <ToString>S-1-5-21-2648780957-277300436-725747423-500</ToString>
+                  <Props>
+                    <I32 N="BinaryLength">28</I32>
+                    <S N="AccountDomainSid">S-1-5-21-2648780957-277300436-725747423</S>
+                    <S N="Value">S-1-5-21-2648780957-277300436-725747423-500</S>
+                  </Props>
+                </Obj>
+              </Props>
+            </Obj>
+            <Obj RefId="145">
+              <TNRef RefId="29" />
+              <ToString>CN=9006487,OU=Disabled,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</ToString>
+              <Props>
+                <S N="distinguishedName">CN=9006487,OU=Disabled,OU=Gebruikers,OU=IPI,DC=pshirwin,DC=local</S>
+                <S N="name">9006487</S>
+                <S N="objectClass">user</S>
+                <G N="objectGUID">79a83387-56b0-45d9-b9aa-054d764fb6d0</G>
+                <S N="SamAccountName">9006487</S>
+                <Obj N="SID" RefId="146">
+                  <TNRef RefId="8" />
+                  <ToString>S-1-5-21-2648780957-277300436-725747423-2193</ToString>
+                  <Props>
+                    <I32 N="BinaryLength">28</I32>
+                    <S N="AccountDomainSid">S-1-5-21-2648780957-277300436-725747423</S>
+                    <S N="Value">S-1-5-21-2648780957-277300436-725747423-2193</S>
+                  </Props>
+                </Obj>
+              </Props>
+            </Obj>
+          </LST>
+        </Obj>
+      </En>
+    </DCT>
+  </Obj>
+</Objs>
