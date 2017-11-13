@@ -1,10 +1,10 @@
-﻿<#
+<#
 
       Author: I.C.A. Strachan
       Version:
       Version History:
 
-      Purpose: Infrastructure Dependencies script to create AzureADUser from CSV file
+      Purpose: Infrastructure Dependencies script to create AzureADUser from XML file
 
 #>
 
@@ -36,7 +36,7 @@ function ConvertTo-HashTable{
    $splat
 }
 
-Function Test-CSVNewADUserParameters{
+Function Test-NewADUserParameters{
    param(
       $objActual,
       $objExpected
@@ -76,7 +76,7 @@ Function Create-TestCasesUserProperties{
 #1) Verify xml file exist
 #   a) Verify Mandatory Name parameter
 #   b) Verify Valid parameters
-#2) Can user read AzureAD properties.
+#2) Veridy user can read AzureAD properties.
 
 
 $dependencies = @(
@@ -85,12 +85,11 @@ $dependencies = @(
       Test   = {(Get-module -ListAvailable).Name -contains 'AzureADPreview'}
       Action = {
          #Import ActiveDirectory
-         Import-Module -Name AzureADPreview
+         $null = Import-Module -Name AzureADPreview -Verbose:$false
 
          #Get New-ADUser Parameters available
          $script:parametersNewAzureADUser = (Get-Command New-AzureADUser -ErrorAction Stop).ParameterSets.Parameters | 
-            Where-Object {$_.ValueFromPipelineByPropertyName -eq $true} |
-            Select-Object Name,Ismandatory 
+         Where-Object {$_.IsDynamic -eq $true}
       }
    }
 
@@ -100,7 +99,8 @@ $dependencies = @(
       Action = {
          $script:xmlPSConfAsia       = Import-Clixml -Path $xmlFile 
          $script:xmlPSConfAsiaColumns = ($xmlPSConfAsia| Get-Member -MemberType NoteProperty).Name
-         #$script:UserProperties   = $csvPSConfAsiaColumns.Where{$_ -ne 'Path'}
+         #Removing PasswordProfile from the equation as we can't verify this in hindsight
+         $script:UserProperties   = $xmlPSConfAsiaColumns.Where{$_ -ne 'PasswordProfile'}
       }
    }
 
@@ -130,7 +130,7 @@ $dependencies = @(
 
    @{
       Label  = "XML contains valid parameters For cmdlet New-ADUser"
-      Test   = {Test-CSVNewADUserParameters -objActual $script:xmlPSConfAsiaColumns -objExpected $parametersNewAzureADUser}
+      Test   = {Test-NewADUserParameters -objActual $script:xmlPSConfAsiaColumns -objExpected $parametersNewAzureADUser}
       Action = {}
    }
 
@@ -146,47 +146,46 @@ foreach($dependency in $dependencies){
       throw "The check: $($dependency.Label) failed. Halting script"
    }
    else{
-      Write-Verbose $($dependency.Label) 
+      Write-Host $($dependency.Label) -ForegroundColor Magenta
       $dependency.Action.Invoke()
    }
 }
 #endregion
 
-##region Main
-#$csvDuPSUG  |
-#Foreach-Object{
-#   $Actual = $_
-#   Describe "Processing User $($Actual.SamAccountName)"{
-#      Context "Creating AD User account for $($Actual.SamAccountName) "{
-#         #Convert to HashTable for splatting
-#         $paramNewADUser = ConvertTo-HashTable -PSObject $Actual
-#
-#         #region Act
-#         #1) Create ADUser from csv file
-#
-#         It "Created an account for $($Actual.SamAccountName)"{
-#            New-ADUser @paramNewADUser
-#         }
-#         #endregion
-#      }
-#
-#      Context "Verifying AD User properties for $($Actual.SamAccountName)"{
-#         #region Assert
-#         #1) Verify AD user has been created correctly
-#
-#         #Get AD user properties
-#         #Get-ADUser doesn't have a Path parameter that's why it's been removed
-#         $Expected = Get-ADUser -Identity $Actual.SamAccountName -Properties $UserProperties
-#
-#         #Create TestCases for verifying Properties
-#         $TestCases = Create-TestCasesUserProperties -objActual $Actual -objExpected $Expected -Properties $UserProperties
-#
-#         It 'Verified that property <property> expected value <expected> actually is <actual>' -TestCases $TestCases   {
-#            param($Actual,$Expected,$Property)
-#            $Actual.$Property  | should be $Expected.$Property
-#         }
-#         #endregion
-#      }
-#   }
-#}
-##endregion
+#region Main
+$xmlPSConfAsia[15..19]  |
+Foreach-Object{
+   $Actual = $_
+   Describe "Processing User $($Actual.DisplayName)"{
+      Context "Creating AzureAD User account for $($Actual.DisplayName) "{
+         #Convert to HashTable for splatting
+         $paramNewAzureADUser = ConvertTo-HashTable -PSObject $Actual
+
+         #region Act
+         #1) Create ADUser from csv file
+
+         It "Created an account for $($Actual.DisplayName)"{
+            New-AzureADUser @paramNewAzureADUser
+         }
+         #endregion
+      }
+
+      Context "Verifying AD User properties for $($Actual.DisplayName)"{
+         #region Assert
+         #1) Verify AD user has been created correctly
+
+         #Get AzureAD user properties
+         $Expected = Get-AzureADUser -ObjectId $Actual.UserPrincipalName
+
+         #Create TestCases for verifying Properties
+         $TestCases = Create-TestCasesUserProperties -objActual $Actual -objExpected $Expected -Properties $UserProperties
+
+         It 'Verified that property <property> expected value <expected> is <actual>' -TestCases $TestCases   {
+            param($Actual,$Expected,$Property)
+            $Actual.$Property  | should be $Expected.$Property
+         }
+         #endregion
+      }
+   }
+}
+#endregion
