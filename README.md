@@ -45,3 +45,8 @@ This repository contains all the presentation materials, including slidedecks, d
 | Working Faster & Smarter with PowerShell | Desmond Lee |	| | [Video](https://vimeo.com/244146259) |
 | PowerShell - Microsoft's Incident Response Language | Jared Atkinson | | | [Video](https://vimeo.com/244147771) |
 | SQL Server Extended Events – What are you waiting for? | Jonathan Allen | | | [Video](https://vimeo.com/244165431) |
+| Automate & Configure at scale with Azure Management Services | Michael Greene | | | [Video](https://vimeo.com/244017210) |
+| Designing azure Resource Manager Templates | Ritesh Modi | | | [Video](https://vimeo.com/243974589)|
+| What the heck is Microsoft Graph? and why should I care? | Steven Hosking | | | [Video](https://vimeo.com/244006921) |
+| PowerShell Obfuscation Detection Using Science | Lee Holmes | | | [Video](https://vimeo.com/244165370) |
+| Azure Stack - Securing the modern hybrid cloud | Lee Holmes | | | [Video](https://vimeo.com/244024771) |
