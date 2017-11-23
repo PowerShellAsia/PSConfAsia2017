@@ -47,5 +47,5 @@ This repository contains all the presentation materials, including slidedecks, d
 | SQL Server Extended Events – What are you waiting for? | [Jonathan Allen](https://twitter.com/fatherjack) | | | [Video](https://vimeo.com/244165431) |
 | Automate & Configure at scale with Azure Management Services | [Michael Greene](https://twitter.com/migreene) | | | [Video](https://vimeo.com/244017210) |
 | Designing azure Resource Manager Templates | [Ritesh Modi](https://twitter.com/automationnext) | | | [Video](https://vimeo.com/243974589)|
-| PowerShell Obfuscation Detection Using Science | [Lee Holmes](https://twitter.com/Lee_Holmes){:target="_blank"} | | | [Video](https://vimeo.com/244165370) |
+| PowerShell Obfuscation Detection Using Science | [Lee Holmes](https://twitter.com/Lee_Holmes) | | | [Video](https://vimeo.com/244165370) |
 | Azure Stack - Securing the modern hybrid cloud | [Lee Holmes](https://twitter.com/Lee_Holmes) | | | [Video](https://vimeo.com/244024771) |
